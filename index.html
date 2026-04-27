@@ -1,0 +1,486 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="MD Awsaf Hossain | Quantitative Finance and Statistics student portfolio."
+    />
+    <meta
+      name="keywords"
+      content="MD Awsaf Hossain, quant finance, statistics, UTSC, trading, data analytics, finance internship"
+    />
+    <meta name="author" content="MD Awsaf Hossain" />
+    <meta name="theme-color" content="#060b18" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="MD Awsaf Hossain | Quant Finance Portfolio" />
+    <meta
+      property="og:description"
+      content="UTSC Statistics Co-op student (Quantitative Finance stream) building toward quant trading, data analytics, and finance roles."
+    />
+    <meta property="og:url" content="https://cursor-code--awsafhossain200.replit.app" />
+    <meta
+      property="og:image"
+      content="https://cursor-code--awsafhossain200.replit.app/portfolio-preview.png"
+    />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="MD Awsaf Hossain | Quant Finance Portfolio" />
+    <meta
+      name="twitter:description"
+      content="Quant-focused portfolio featuring projects, finance experience, and technical roadmap."
+    />
+    <meta
+      name="twitter:image"
+      content="https://cursor-code--awsafhossain200.replit.app/portfolio-preview.png"
+    />
+    <title>MD Awsaf Hossain | Quant Finance Portfolio</title>
+    <link rel="canonical" href="https://cursor-code--awsafhossain200.replit.app" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- Subtle chart-grid background effect -->
+    <div class="background-grid" aria-hidden="true"></div>
+
+    <!-- Header / Navbar -->
+    <header class="site-header" id="top">
+      <nav class="nav container">
+        <a class="logo" href="#top">MD Awsaf Hossain</a>
+        <div class="nav-actions">
+          <button
+            class="theme-toggle"
+            id="themeToggle"
+            type="button"
+            aria-label="Toggle theme"
+            title="Toggle light/dark mode"
+          >
+            <span id="themeIcon">☀</span>
+          </button>
+          <button class="menu-toggle" id="menuToggle" aria-label="Toggle navigation">
+            ☰
+          </button>
+        </div>
+        <ul class="nav-links" id="navLinks">
+          <li><a href="#about">About</a></li>
+          <li><a href="#education">Education</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#experience">Experience</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#roadmap">Roadmap</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <!-- Hero Section -->
+      <section class="hero section">
+        <div class="container hero-layout">
+          <div class="hero-content reveal">
+            <p class="eyebrow">Toronto, Canada | UTSC Statistics Co-op</p>
+            <h1>MD Awsaf Hossain</h1>
+            <h2>
+              Aspiring Quant Finance Analyst |
+              <span>Markets + Statistics + Programming</span>
+            </h2>
+            <p class="hero-tagline">
+              I build data-driven finance projects across backtesting, modeling, and
+              analytics to prepare for quant research, trading, and finance internships.
+            </p>
+            <div class="hero-buttons">
+              <a class="btn btn-primary" href="#projects">View Projects</a>
+              <a class="btn btn-secondary" href="./resume.pdf" download target="_blank" rel="noreferrer"
+                >Download Resume</a
+              >
+              <a
+                class="btn btn-ghost"
+                href="https://www.linkedin.com/in/awsafhossain/"
+                target="_blank"
+                rel="noreferrer"
+                >LinkedIn</a
+              >
+              <a
+                class="btn btn-ghost"
+                href="https://github.com/hossainawsaf11"
+                target="_blank"
+                rel="noreferrer"
+                >GitHub</a
+              >
+            </div>
+          </div>
+
+          <!-- Right-side stat cards make the hero look more quant-focused -->
+          <aside class="hero-panel reveal">
+            <div class="metric-card profile-card">
+              <img src="./awsaf.jpeg" alt="MD Awsaf Hossain portrait" class="profile-photo" />
+            </div>
+            <div class="metric-card chart-card">
+              <p class="metric-label">Live Simulation (Sample)</p>
+              <svg
+                class="mini-chart"
+                viewBox="0 0 320 120"
+                role="img"
+                aria-label="Animated sample equity curve"
+              >
+                <line x1="0" y1="100" x2="320" y2="100" class="chart-axis"></line>
+                <polyline
+                  id="equityCurve"
+                  points="0,94 28,92 56,84 84,86 112,70 140,72 168,66 196,58 224,54 252,46 280,36 320,28"
+                  class="chart-line"
+                ></polyline>
+              </svg>
+            </div>
+            <div class="metric-card">
+              <p class="metric-label">Primary Focus</p>
+              <p class="metric-value">Quant Research &amp; Trading</p>
+            </div>
+            <div class="metric-card">
+              <p class="metric-label">Academic Track</p>
+              <p class="metric-value">Statistics (Quant Finance), BBA Finance</p>
+            </div>
+            <div class="metric-card">
+              <p class="metric-label">Core Tools</p>
+              <p class="metric-value">Python, C, SQL, Power BI, Excel</p>
+            </div>
+          </aside>
+        </div>
+      </section>
+
+      <!-- About -->
+      <section class="section" id="about">
+        <div class="container reveal">
+          <h3 class="section-title">About Me</h3>
+          <p class="section-text">
+            I am a University of Toronto Scarborough Statistics Co-op student in the
+            Quantitative Finance stream, with a BBA background in Management Finance.
+            My path combines business and technical training: programming experience in
+            Python and C, practical finance exposure through internships at Heineken
+            Canada and Teesta Solar, and continuous project-based learning across data,
+            markets, and modeling. I am intentionally building toward quant finance by
+            strengthening mathematical foundations, developing coding depth, and
+            applying finance concepts through hands-on analysis and strategy work.
+          </p>
+        </div>
+      </section>
+
+      <!-- Education -->
+      <section class="section" id="education">
+        <div class="container reveal">
+          <h3 class="section-title">Education</h3>
+          <article class="card">
+            <h4>University of Toronto Scarborough</h4>
+            <p class="subtitle">
+              Honours Bachelor of Science, Statistics Co-op – Quantitative Finance
+              Stream
+            </p>
+            <p class="section-text">
+              Relevant coursework: Calculus I/II, Linear Algebra I/II, Differential
+              Equations, Discrete Mathematics, Data Structures, Python Programming, C
+              Programming, Microeconomics, Macroeconomics, Financial Accounting,
+              Management Accounting, Probability, and Finance/Investments.
+            </p>
+            <p class="section-text">
+              Academic progression reflects strong technical growth, including an A+ in
+              CSCA08 and a strong Calculus I performance as key milestones in my
+              comeback journey.
+            </p>
+          </article>
+        </div>
+      </section>
+
+      <!-- Skills -->
+      <section class="section" id="skills">
+        <div class="container reveal">
+          <h3 class="section-title">Skills</h3>
+          <div class="grid three-col">
+            <article class="card">
+              <h4>Quant Research</h4>
+              <p>Backtesting, market data analysis, strategy evaluation, regime testing</p>
+            </article>
+            <article class="card">
+              <h4>Programming</h4>
+              <p>Python, C, SQL, VBA, file parsing, data structures</p>
+            </article>
+            <article class="card">
+              <h4>Mathematics</h4>
+              <p>Calculus, Linear Algebra, Differential Equations, Probability, Discrete Math</p>
+            </article>
+            <article class="card">
+              <h4>Financial Analysis</h4>
+              <p>DCF valuation, financial modeling, forecasting, budgeting, sensitivity analysis</p>
+            </article>
+            <article class="card">
+              <h4>Data Stack</h4>
+              <p>Excel, Power BI, Alteryx, data cleaning, dashboards, automation</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- Experience -->
+      <section class="section" id="experience">
+        <div class="container reveal">
+          <h3 class="section-title">Experience</h3>
+          <div class="grid two-col">
+            <article class="card">
+              <h4>Finance Intern – Heineken Canada</h4>
+              <p>
+                Built Power BI dashboards across sales and finance datasets; supported
+                time-series trend analysis, forecasting, pricing and discount analysis,
+                and Python-based automation for recurring reporting workflows.
+              </p>
+            </article>
+            <article class="card">
+              <h4>Junior Financial Analyst – Teesta Solar Ltd.</h4>
+              <p>
+                Developed a 20-year revenue model and DCF valuation model with
+                sensitivity analysis for solar project finance decisions; helped define
+                KPI dashboards for performance tracking.
+              </p>
+            </article>
+            <article class="card">
+              <h4>
+                Finance &amp; Marketing Director – Data Science and Statistics Society,
+                UofT
+              </h4>
+              <p>
+                Managed Datathon budgeting, sponsor coordination, financial
+                documentation, and KPI tracking to support financially sustainable and
+                well-executed student events.
+              </p>
+            </article>
+            <article class="card">
+              <h4>Co-Founder – ChattoTurf Sports Arena</h4>
+              <p>
+                Led financial planning and cash-flow modeling, supported operations
+                across four venues, and coordinated teams to keep execution aligned with
+                growth goals.
+              </p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- Projects -->
+      <section class="section" id="projects">
+        <div class="container reveal">
+          <h3 class="section-title">Featured Projects</h3>
+          <div class="grid two-col">
+            <article class="card project-card">
+              <h4>Quant Trading Strategy Backtest</h4>
+              <p>
+                Python backtesting framework using TSLA market data with transaction
+                costs, signal rules, volatility targeting, and market regime testing.
+              </p>
+              <p class="project-meta"><strong>Result:</strong> Strategy edge weakened out-of-sample after realistic cost controls.</p>
+              <div class="tags">
+                <span>Python</span><span>Backtesting</span><span>Market Data</span>
+              </div>
+              <a
+                class="project-link"
+                href="https://github.com/hossainawsaf11/tsla-ema-rsi-backtest"
+                target="_blank"
+                rel="noreferrer"
+                >View Project</a
+              >
+            </article>
+
+            <article class="card project-card">
+              <h4>Ingredient Networks Graph Project in C</h4>
+              <p>
+                Built a graph-based ingredient network using an adjacency matrix,
+                recursive k-hop search, and exclusion filtering with scalability to 400
+                ingredients.
+              </p>
+              <p class="project-meta"><strong>Method:</strong> Recursive graph traversal and matrix-based relationship scoring.</p>
+              <div class="tags">
+                <span>C</span><span>Graphs</span><span>Recursion</span>
+              </div>
+              <a
+                class="project-link"
+                href="https://github.com/hossainawsaf11/c-programming-projects-csca48"
+                target="_blank"
+                rel="noreferrer"
+                >View Project</a
+              >
+            </article>
+
+            <article class="card project-card">
+              <h4>Music Data Structures Project in C</h4>
+              <p>
+                Implemented binary search trees and linked structures with recursion,
+                file parsing, traversal, deletion, reversal, and harmonization logic.
+              </p>
+              <p class="project-meta"><strong>Thesis:</strong> Efficient structure design improves correctness and speed in low-level C workflows.</p>
+              <div class="tags">
+                <span>C</span><span>Data Structures</span><span>BST</span>
+              </div>
+              <a
+                class="project-link"
+                href="https://github.com/hossainawsaf11/c-programming-projects-csca48"
+                target="_blank"
+                rel="noreferrer"
+                >View Project</a
+              >
+            </article>
+
+            <article class="card project-card">
+              <h4>Movie Review Database Project in C</h4>
+              <p>
+                Designed a pointer-based linked-list database supporting
+                insert/search/update/sort/delete operations and profitability analysis.
+              </p>
+              <p class="project-meta"><strong>Method:</strong> Pointer-safe linked-list operations with modular query and ranking logic.</p>
+              <div class="tags">
+                <span>C</span><span>Linked Lists</span><span>Database Logic</span>
+              </div>
+              <a
+                class="project-link"
+                href="https://github.com/hossainawsaf11/c-programming-projects-csca48"
+                target="_blank"
+                rel="noreferrer"
+                >View Project</a
+              >
+            </article>
+
+            <article class="card project-card full-width">
+              <h4>Ontario Bridges Data Analysis Project in Python</h4>
+              <p>
+                Processed CSV infrastructure data to analyze bridge conditions, perform
+                distance-based filtering, and build priority ranking logic for
+                inspection planning.
+              </p>
+              <p class="project-meta"><strong>Result:</strong> Produced a reproducible prioritization workflow for inspection decision support.</p>
+              <div class="tags">
+                <span>Python</span><span>Data Analysis</span><span>CSV Processing</span>
+              </div>
+              <a
+                class="project-link"
+                href="https://github.com/hossainawsaf11/python_uni_assignments"
+                target="_blank"
+                rel="noreferrer"
+                >View Project</a
+              >
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- Roadmap -->
+      <section class="section" id="roadmap">
+        <div class="container reveal">
+          <h3 class="section-title">Currently Building Toward Quant Finance</h3>
+          <ol class="roadmap">
+            <li>Advance Python workflows for cleaner research and faster analysis cycles</li>
+            <li>Deepen probability, statistics, and stochastic reasoning for market uncertainty</li>
+            <li>Expand backtesting research with stronger risk controls and regime awareness</li>
+            <li>Use C and data structures to strengthen algorithmic and systems thinking</li>
+            <li>Apply financial modeling and valuation in practical investment scenarios</li>
+            <li>Next focus: options pricing, portfolio optimization, and ML for market signals</li>
+          </ol>
+        </div>
+      </section>
+
+      <!-- Contact -->
+      <section class="section" id="contact">
+        <div class="container reveal">
+          <h3 class="section-title">Resume &amp; Contact</h3>
+          <article class="card contact-card">
+            <p>
+              Interested in quant finance, trading research, data analytics, and
+              finance internship opportunities.
+            </p>
+            <div class="contact-grid">
+              <p><strong>Email:</strong> aws.hossain@mail.utoronto.ca</p>
+              <p><strong>Location:</strong> Toronto, ON</p>
+              <p>
+                <strong>LinkedIn:</strong>
+                <a href="https://www.linkedin.com/in/awsafhossain/" target="_blank" rel="noreferrer"
+                  >linkedin.com/in/awsafhossain</a
+                >
+              </p>
+              <p>
+                <strong>GitHub:</strong>
+                <a href="https://github.com/hossainawsaf11" target="_blank" rel="noreferrer"
+                  >github.com/hossainawsaf11</a
+                >
+              </p>
+            </div>
+            <div class="contact-actions">
+              <a class="btn btn-primary" href="./resume.pdf" download target="_blank" rel="noreferrer"
+                >Download Resume</a
+              >
+            </div>
+
+            <!-- Contact form (Formspree) -->
+            <!-- Setup:
+                 1) Create a form at https://formspree.io/ using aws.hossain@mail.utoronto.ca
+                 2) Replace YOUR_FORM_ID below with the id Formspree gives you
+            -->
+            <form
+              class="contact-form"
+              id="contactForm"
+              action="https://formspree.io/f/xaqazoyv"
+              method="POST"
+            >
+              <!-- Honeypot field (basic spam protection). Keep hidden. -->
+              <input class="hp-field" type="text" name="_gotcha" tabindex="-1" autocomplete="off" />
+
+              <div class="form-grid">
+                <label>
+                  <span>Name</span>
+                  <input name="name" type="text" placeholder="Your name" required />
+                </label>
+                <label>
+                  <span>Email</span>
+                  <input name="email" type="email" placeholder="you@email.com" required />
+                </label>
+              </div>
+
+              <label>
+                <span>Subject</span>
+                <input name="subject" type="text" placeholder="Internship, research, collaboration..." />
+              </label>
+
+              <label>
+                <span>Message</span>
+                <textarea
+                  name="message"
+                  rows="6"
+                  placeholder="Write your message..."
+                  required
+                ></textarea>
+              </label>
+
+              <div class="form-actions">
+                <button class="btn btn-secondary" type="submit" id="contactSubmit">
+                  Send Message
+                </button>
+                <p class="form-note">
+                  This form is powered by Formspree (no backend). If it ever fails, email me directly at
+                  <a href="mailto:aws.hossain@mail.utoronto.ca">aws.hossain@mail.utoronto.ca</a>.
+                </p>
+              </div>
+
+              <p class="form-status" id="formStatus" aria-live="polite"></p>
+            </form>
+          </article>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container">
+        <p>© <span id="year"></span> MD Awsaf Hossain. All rights reserved.</p>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
