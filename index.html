@@ -120,22 +120,6 @@
             <div class="metric-card profile-card">
               <img src="./awsaf.jpeg" alt="MD Awsaf Hossain portrait" class="profile-photo" />
             </div>
-            <div class="metric-card chart-card">
-              <p class="metric-label">Live Simulation (Sample)</p>
-              <svg
-                class="mini-chart"
-                viewBox="0 0 320 120"
-                role="img"
-                aria-label="Animated sample equity curve"
-              >
-                <line x1="0" y1="100" x2="320" y2="100" class="chart-axis"></line>
-                <polyline
-                  id="equityCurve"
-                  points="0,94 28,92 56,84 84,86 112,70 140,72 168,66 196,58 224,54 252,46 280,36 320,28"
-                  class="chart-line"
-                ></polyline>
-              </svg>
-            </div>
             <div class="metric-card">
               <p class="metric-label">Primary Focus</p>
               <p class="metric-value">Quant Research &amp; Trading</p>
@@ -272,6 +256,21 @@
         <div class="container reveal">
           <h3 class="section-title">Featured Projects</h3>
           <div class="grid two-col">
+            <article class="card project-card full-width">
+              <h4>Implied Volatility Surfaces and the Variance Risk Premium</h4>
+              <p>
+                Building implied volatility surfaces from OptionMetrics index option
+                data and comparing the variance risk premium across US and Canadian
+                equity exposure. Black-Scholes priced on the forward, implied
+                volatility recovered by Brent inversion, SVI surface fits tested for
+                butterfly and calendar arbitrage violations.
+              </p>
+              <p class="project-meta"><strong>Status:</strong> In progress. Pricer and analytic vega complete, validated against put-call parity, monotonicity in volatility, payoff convergence at expiry, and a finite-difference check.</p>
+              <p class="project-meta"><strong>Design note:</strong> UofT's WRDS subscription has no Canadian IvyDB coverage, so the Canadian leg uses NYSE-listed EWC options. This measures how US investors price Canadian equity risk, currency-unhedged, which is documented as a limitation.</p>
+              <div class="tags">
+                <span>Python</span><span>SciPy</span><span>SQL</span><span>WRDS / OptionMetrics</span><span>Options Pricing</span>
+              </div>
+            </article>
             <article class="card project-card">
               <h4>Quant Trading Strategy Backtest</h4>
               <p>
